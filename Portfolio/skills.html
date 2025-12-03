@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Skills — Mathu Gowshic S</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- header/nav same as others -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Mathu Gowshic S</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="coding-profiles.html">Coding Profiles</a>
+        <a href="contact.html">Contact</a>
+        <a class="resume-btn" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </nav>
+      <button class="nav-toggle" aria-label="menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Skills</h1>
+
+    <section class="skill-section">
+      <h3>Programming</h3>
+      <p>C | C++ | Java | Python</p>
+    </section>
+
+    <section class="skill-section">
+      <h3>Core Concepts</h3>
+      <p>DSA | OOP</p>
+    </section>
+
+    <section class="skill-section">
+      <h3>Web Technologies</h3>
+      <p>HTML | CSS | JavaScript | Spring Boot</p>
+    </section>
+
+    <section class="skill-section">
+      <h3>Tools</h3>
+      <p>VS Code | GitHub | Git | Jupyter Notebook | Canva | Excel | PowerPoint | Blender</p>
+    </section>
+
+    <section class="skill-stats">
+      <h3>Coding practice</h3>
+      <ul>
+        <li>SkillRack: 1140+ problems solved</li>
+        <li>LeetCode: 50+ problems solved</li>
+        <li>CodeChef: 60+ problems solved</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container">© <span id="year3"></span> Mathu Gowshic S</div></footer>
+
+  <script>document.getElementById('year3').textContent = new Date().getFullYear(); document.querySelector('.nav-toggle').addEventListener('click', ()=> document.querySelector('.nav').classList.toggle('open'))</script>
+</body>
+</html>

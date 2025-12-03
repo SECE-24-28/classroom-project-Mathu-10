@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Coding Profiles — Mathu Gowshic S</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Mathu Gowshic S</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="coding-profiles.html">Coding Profiles</a>
+        <a href="contact.html">Contact</a>
+        <a class="resume-btn" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </nav>
+      <button class="nav-toggle" aria-label="menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Coding Profiles</h1>
+    <ul class="profiles-list">
+      <li>SkillRack: <a href="#" target="_blank" rel="noopener">Skillrack Link</a> — 1140+ problems solved</li>
+      <li>LeetCode: <a href="#" target="_blank" rel="noopener">LeetCode Link</a> — 50+ problems solved</li>
+      <li>CodeChef: <a href="#" target="_blank" rel="noopener">CodeChef Link</a> — 60+ problems solved</li>
+    </ul>
+  </main>
+
+  <footer class="site-footer"><div class="container">© <span id="year6"></span> Mathu Gowshic S</div></footer>
+
+  <script>document.getElementById('year6').textContent = new Date().getFullYear(); document.querySelector('.nav-toggle').addEventListener('click', ()=> document.querySelector('.nav').classList.toggle('open'))</script>
+</body>
+</html>

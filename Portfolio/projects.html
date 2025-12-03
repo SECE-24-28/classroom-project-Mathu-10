@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — Mathu Gowshic S</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Mathu Gowshic S</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="coding-profiles.html">Coding Profiles</a>
+        <a href="contact.html">Contact</a>
+        <a class="resume-btn" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </nav>
+      <button class="nav-toggle" aria-label="menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Projects</h1>
+
+    <article class="project-card">
+      <h3>Farmer Cooperative Management System (FCMSS)</h3>
+      <p><strong>Tech:</strong> Spring Boot 3, Spring Security, REST APIs</p>
+      <p>Role-based management system centralizing cooperative operations: contribution tracking, event scheduling, asset booking with conflict resolution, validation and global error handling. Designed with robust API endpoints and data validations for reliable performance.</p>
+      <p><a href="#" target="_blank" rel="noopener">GitHub (link)</a> • <a href="#">Live demo</a></p>
+    </article>
+
+    <article class="project-card">
+      <h3>Smart Traffic Flow</h3>
+      <p><strong>Tech:</strong> ML / Time-series, API integration</p>
+      <p>Smart Traffic Flow Prediction System for Bengaluru — forecasts congestion using historical and real-time inputs; integrates dynamic weather and live feeds for better urban mobility planning.</p>
+      <p><a href="#" target="_blank" rel="noopener">Project report</a></p>
+    </article>
+  </main>
+
+  <footer class="site-footer"><div class="container">© <span id="year4"></span> Mathu Gowshic S</div></footer>
+
+  <script>document.getElementById('year4').textContent = new Date().getFullYear(); document.querySelector('.nav-toggle').addEventListener('click', ()=> document.querySelector('.nav').classList.toggle('open'))</script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mathu Gowshic S — Portfolio</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Mathu Gowshic S</a>
+      <nav class="nav" id="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="coding-profiles.html">Coding Profiles</a>
+        <a href="contact.html">Contact</a>
+        <a class="resume-btn" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </nav>
+      <button class="nav-toggle" aria-label="menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-left">
+        <h1>Hi — I'm <strong>Mathu Gowshic S</strong></h1>
+        <p class="lead">B.Tech AI-DS student | Full-stack & ML enthusiast | Problem-solver</p>
+
+        <ul class="contact-inline">
+          <li>📞 +91 7305224977</li>
+          <li>✉️ <a href="mailto:mathugowshic.s2024aids@sece.in">mathugowshic.s2024aids@sece.in</a></li>
+          <li>🔗 <a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+
+        <p class="hero-ctas">
+          <a class="cta" href="projects.html">See Projects</a>
+          <a class="cta ghost" href="3a043003-fe85-47d7-9ce4-c905f56a36c8.pdf" target="_blank" rel="noopener">Download Resume</a>
+        </p>
+      </div>
+
+      <div class="hero-right">
+        <img src="profile.jpg" alt="Mathu Gowshic S" class="avatar">
+      </div>
+    </section>
+
+    <section class="container quick-summary">
+      <h2>Quick Summary</h2>
+      <p>Student at Sri Eshwar College of Engineering (B.Tech AI-DS). Worked on Smart Traffic Flow prediction and Farmer Cooperative Management System (FCMSS). Comfortable with Java, Python, full-stack web basics and data science workflows — see Projects page for details.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Mathu Gowshic S — Built with ♥</small>
+    </div>
+  </footer>
+
+  <script>
+    // set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    toggle && toggle.addEventListener('click', () => nav.classList.toggle('open'));
+
+    // highlight active link
+    (function highlightActive(){
+      const links = document.querySelectorAll('.nav a');
+      const current = location.pathname.split('/').pop() || 'index.html';
+      links.forEach(a => {
+        if(a.getAttribute('href') === current) a.classList.add('active');
+      });
+    })();
+  </script>
+</body>
+</html>

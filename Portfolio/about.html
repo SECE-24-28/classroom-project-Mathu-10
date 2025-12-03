@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Mathu Gowshic S</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- same header/nav as index -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Mathu Gowshic S</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="coding-profiles.html">Coding Profiles</a>
+        <a href="contact.html">Contact</a>
+        <a class="resume-btn" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </nav>
+      <button class="nav-toggle" aria-label="menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>About</h1>
+    <div class="about-grid">
+      <div>
+        <img src="profile.jpg" alt="Profile" class="avatar-lg">
+      </div>
+      <div>
+        <h2>Mathu Gowshic S</h2>
+        <p><strong>Education:</strong> B.Tech AI-DS — Sri Eshwar College of Engineering (CPGA 7.7 - 2nd sem).</p>
+        <p>I build web apps and data solutions — recent projects include a Smart Traffic Flow prediction system for Bengaluru (time-series/model + API integration) and a Farmer Cooperative Management System built using Spring Boot and REST APIs with role-based access (details on Projects page).</p>
+
+        <h3>Contact</h3>
+        <ul>
+          <li>Phone: +91 7305224977</li>
+          <li>Email: <a href="mailto:mathugowshic.s2024aids@sece.in">mathugowshic.s2024aids@sece.in</a></li>
+          <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+
+        <p><a class="cta" href="3a043003-fe85-47d7-9ce4-c905f56a36c8.pdf" target="_blank" rel="noopener">View Resume (PDF)</a></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="container">© <span id="year2"></span> Mathu Gowshic S</div></footer>
+
+  <script>
+    document.getElementById('year2').textContent = new Date().getFullYear();
+    document.querySelector('.nav-toggle').addEventListener('click', ()=> document.querySelector('.nav').classList.toggle('open'));
+    // highlight active link
+    (function highlight(){ const links=document.querySelectorAll('.nav a'); links.forEach(a=>{ if(a.href.includes('about.html')) a.classList.add('active'); }) })()
+  </script>
+</body>
+</html>
