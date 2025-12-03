@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home | LMS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-left">
+      <h1 class="brand">📚 My LMS</h1>
+    </div>
+    <div class="nav-right">
+      <button id="cartBtn" class="btn ghost">Cart (<span id="cartCount">0</span>)</button>
+      <a href="login.html" class="btn ghost">Logout</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="page-title">Available Courses</h2>
+
+    <section class="course-grid" id="courseGrid">
+      <!-- cards injected by JS -->
+    </section>
+  </main>
+
+  <!-- Course detail modal -->
+  <div id="courseModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-content card">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <img id="ml.jpg" alt="" class="modal-img">
+      <h3 id="modalTitle"></h3>
+      <p class="muted" id="modalOwner"></p>
+      <p id="modalDesc"></p>
+      <div class="row between">
+        <strong id="modalPrice"></strong>
+        <div>
+          <button id="modalBuy" class="btn primary">Buy</button>
+          <button id="modalAdd" class="btn ghost">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

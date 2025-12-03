@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Course | LMS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-left">
+      <a href="home.html" class="brand small">⬅ Back</a>
+    </div>
+    <div class="nav-right">
+      <a href="login.html" class="btn ghost">Logout</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="course-detail card">
+      <img id="courseHero" src="ml.jpg" class="hero" alt="">
+      <div class="course-meta">
+        <h1 id="courseTitle">Machine Learning</h1>
+        <p class="muted">Owner: <span id="courseOwner">Kalai</span></p>
+        <p id="courseDescription">Detailed description about the course goes here...</p>
+        <div class="row between">
+          <div class="price">₹<span id="coursePrice">899</span></div>
+          <div>
+            <button id="buyBtn" class="btn primary">Buy Full Course</button>
+            <button id="enrollBtn" class="btn ghost">Enroll (free demo)</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="lessons">
+      <h3>Lessons</h3>
+      <div class="lesson-list">
+        <article class="lesson card">
+          <h4>Lesson 1 — Introduction to ML</h4>
+          <video controls width="100%" src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4"></video>
+        </article>
+
+        <article class="lesson card">
+          <h4>Lesson 2 — Supervised Learning</h4>
+          <video controls width="100%" src="https://samplelib.com/lib/preview/mp4/sample-10s.mp4"></video>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
